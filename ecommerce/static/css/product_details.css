@@ -1,0 +1,162 @@
+.cartTab {
+  width: 400px;
+  background-color: rgba(198, 214, 135, 1);
+  position: fixed;
+  top: 0;
+  right: -400px;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  transition: 0.5s;
+}
+.listCart {
+  overflow: auto;
+}
+.showCart .cartTab {
+  right: 0;
+}
+.showCart .container {
+  transform: translateX(-250px);
+}
+.cartTab h1 {
+  padding: 20px;
+  margin: 10;
+  font-weight: 300;
+  color: #333333;
+  justify-content: center;
+  text-align: center;
+}
+.cartTab .btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.cartTab button {
+  background-color: #333333;
+  border: none;
+  font-family: Poppins;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cartTab .close {
+  background-color: #eee;
+}
+.cartTab .checkOut {
+  color: white;
+  width: 187px;
+  height: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #333333;
+}
+.listProductDetails .item img {
+  width: 40%;
+}
+.listProductDetails {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  margin-left: 50px;
+}
+
+.listProductDetails .item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  background-color: #eeeee6;
+  padding: 20px;
+}
+
+.listProductDetails .item img {
+  max-width: 100%;
+}
+
+.listProductDetails .item .details {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 20px;
+}
+
+.listProductDetails .item h2 {
+  font-weight: 500;
+  font-size: xx-large;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.listProductDetails .item .price {
+  letter-spacing: 5px;
+  font-size: xx-large;
+}
+
+.listProductDetails .item button {
+  background-color: #353432;
+  color: #eee;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 20px;
+  width: 265px;
+}
+
+.overview-image {
+  text-align: center;
+  background-color: white;
+  width: 450px;
+  margin-right: 90px;
+  padding: 15px;
+}
+.select .quantity button:first-of-type {
+  color: #404436;
+  background-color: transparent;
+  padding: 10px 12px;
+  text-align: center;
+  border: solid 1px #404436;
+}
+.select .quantity button:nth-of-type(2) {
+  color: white;
+  background-color: #404436;
+  padding: 10px 12px;
+  text-align: center;
+  border: solid 1px #404436;
+}
+.select .quantity input:focus {
+  outline: none;
+}
+.select .quantity input {
+  padding: 8px 0px 8px 15px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+.select .add-cart {
+  text-align: center;
+  background-color: #404436;
+  color: white;
+  padding: 11px 25px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+.details {
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
+.details h2 {
+  margin-left: 20px;
+}
+.details .one-detail {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+.details .one-detail h4 {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,126 @@
+body {
+  font-family: "Open Sans", sans-serif; /* Use a clean sans-serif font */
+  margin: 20;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1rem 0;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.header {
+  background-color: #f2f2f2;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.search-icon,
+.icon-cart {
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon p {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.icon-cart svg {
+  fill: #333;
+  width: 20px;
+  height: 20px;
+}
+.details {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.details hr {
+  border: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+.one-detail {
+  margin-bottom: 1.5rem;
+}
+
+.one-detail h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+footer {
+  padding: 2rem 0;
+  background-color: #404436;
+  color: #fff;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.copyright span {
+  color: #00cc00; /* Green color */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin-bottom: 0.5rem;
+}

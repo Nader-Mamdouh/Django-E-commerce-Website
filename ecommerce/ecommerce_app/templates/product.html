@@ -1,0 +1,199 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;500&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{%static 'product.css'%}" />
+  </head>
+  <body>
+    <div class="header">
+      <ul class="nav-bar">
+        <li><a href="{%url 'watches'%}">Watches</a></li>
+        <li><a href="#">Eyewear</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <a style="text-decoration: none; color: #333333" href="Login.html">
+        <div class="user-icon">
+          <p>Login</p>
+        </div>
+      </a>
+      <div class="icon-cart" id="cartIcon">
+        <svg
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 18 20"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
+          />
+        </svg>
+        <span>0</span>
+      </div>
+    </div>
+    <!---->
+    <br></br>
+    <div class="card mb-3">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+            <img src="{{ product.image.url }}" class="card-img" alt=""/>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">
+               $ {{product.price}}
+            
+            <div class="row justify-content-center">
+              <div class="col-md-2"> Quantity</div>
+              <div class="col-md-2">
+                <select class="from-select from-select-sm">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br></br> 
+    <div class="details">
+      <h2>Details</h2>
+      <hr />
+      <div class="one-detail">
+        <h4>Material</h4>
+        <p style="color: #555555; margin-bottom: 20px">
+          MATOA Way Kambas - Sumatran Rhino comes with a material form of
+          Makassar Ebony (Diospyros celebica). This wood is chosen to represent
+          the Sumatran Rhino's skin which is designed with an overlap effect on
+          its strap to represent Rhino's skin. Sumatran Rhino has unique skin
+          fold, the skin is fairly thin about 10-16mm, and is soft and pliable.
+        </p>
+      </div>
+      <div class="one-detail">
+        <h4>Case</h4>
+        <p style="color: #555555; margin-bottom: 20px">
+          The case on this timepiece is made with Height 12.5mm, Width 36mm,
+          Length 33mm and Dial Opening 25mm. The glass is equipped with K1 flat
+          glass to increase the enhanced durability on timepieces as scratch
+          resistant and anti fingerprint. This timepiece is also equipped with
+          Hand Polish Brass Spacer for a longer usage periods.
+        </p>
+      </div>
+      <div class="one-detail">
+        <h4>Movement</h4>
+        <p style="color: #555555; margin-bottom: 20px">
+          For the first time, MATOA comes with Seiko Quartz VD78 movement with
+          small second function. A small second hand is above 6 o'clock
+          position. This second hand dial is dedicated to Sumatran Rhino whom
+          every second of its life is so precious because whenever Sumatran
+          Rhino goes, it can be threatened by illegal poaching
+        </p>
+      </div>
+      <div class="one-detail">
+        <h4>Dial</h4>
+        <p style="color: #555555; margin-bottom: 20px">
+          In the dial, there are double layer of Makassar Ebony Veneer with 3, 9
+          & 12 o'clock laser cut brass plate index.
+        </p>
+      </div>
+      <div class="one-detail">
+        <h4>Hand</h4>
+        <p style="color: #555555; margin-bottom: 20px">
+          The hour, minute & small second hands on MATOA Way Kambas - Sumatran
+          Rhino is outfitted with skeleton hand and brush finished with Gold
+          Matte color. This new design aims at adding a value for this special
+          edition.
+        </p>
+      </div>
+      <div class="one-detail">
+        <h4>Important to Note</h4>
+        <p style="color: #555555; margin-bottom: 20px">
+          Wood color on watches is produced from a combination of mature and
+          fresh wood but should not be viewed as a defect. It is a very natural
+          process of wood aging.
+        </p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-bottom: 75px">
+      <img src="{%static 'images/image 40.png'%}" alt="" />
+    </div>
+    <!-- start footer -->
+    <footer style="background-color: #404436">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="info">
+              <h1>Luminous</h1>
+              <p class="text-light text-white-50 mb-5">
+                Luminous is an online store based in Egypt that focuses on
+                high-quality, handcrafted goods. Instead of your typical mix of
+                products, Luminous specializes in luxury items.
+              </p>
+              <div class="copyright text-light text-white-50 mb-3">
+                <div>
+                  Created By
+                  <span style="color: var(--green-color)">NMSK</span>
+                </div>
+                <div>
+                  © 2024 -
+                  <span style="color: var(--yellow-color)">Bondi Inc</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 text-light pt-5">
+            <h5>Links</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">Home</li>
+              <li class="mb-2">Our Services</li>
+              <li class="mb-2">Portfolio</li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 text-light pt-5">
+            <h5>About Us</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">About Us</li>
+              <li class="mb-2">Blog</li>
+              <li class="mb-2">Contact Us</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 pt-5">
+            <h5 class="text-light">Contact Us</h5>
+            <p class="lh-lg text-white-50 mb-5">
+              Get in touch with us via mail phone.We are waiting for your call
+              or message
+            </p>
+            <a href="" class="btn main-btn rounded-pill w-100"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>

@@ -1,0 +1,601 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ededed !important;
+  font-family: "Taviraj" !important;
+}
+.container {
+  margin-left: 100px !important;
+  padding: 40px 0 !important;
+}
+
+.clearfix {
+  clear: both;
+}
+.listCart {
+  overflow: auto;
+}
+.news .monthly h1 {
+  color: #333333;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.news .monthly .item {
+  padding: 20px;
+  background-color: white;
+  margin-top: 40px;
+  margin-right: 20px;
+  float: left;
+  height: 380px;
+  transition: height 0.5s ease-in-out;
+}
+.news .monthly .item .favourites {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.news .monthly .item:hover .favourites {
+  visibility: visible;
+  opacity: 1;
+}
+.news .monthly .item:hover {
+  height: 440px;
+}
+.news .monthly .item .favourites button:first-child {
+  height: 40px;
+  width: 40px;
+  padding-top: 3px;
+  background-color: transparent;
+  border: solid 1px #404436;
+  color: #404436;
+  font-size: 25px;
+  cursor: pointer;
+}
+.news .monthly .item .favourites button:last-child {
+  padding: 10px 38px;
+  border: none;
+  height: 40px;
+  background-color: #404436;
+  color: white;
+  font-weight: 400;
+  float: right;
+  cursor: pointer;
+}
+.news .monthly .item .favourites button:last-child:hover {
+  background-color: rgba(64, 68, 54, 0.8);
+}
+.cartTab {
+  width: 400px;
+  background-color: rgba(198, 214, 135, 1);
+  position: fixed;
+  top: 0;
+  right: -400px;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  transition: 0.5s;
+  z-index: 1;
+}
+body.showCart .cartTab {
+  right: 0;
+}
+body.showCart .container {
+  transform: translateX(-250px);
+}
+.cartTab h1 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  color: #333333;
+  justify-content: center;
+  text-align: center;
+}
+.cartTab .btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.cartTab button {
+  background-color: #333333;
+  border: none;
+  font-family: Poppins;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cartTab .close {
+  background-color: #eee;
+}
+.cartTab .checkOut {
+  color: white;
+  width: 187px;
+  height: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: #333333;
+}
+.listCart .item img {
+  width: 100%;
+}
+.listCart .item {
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.listCart .quantity span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  color: #555;
+  cursor: pointer;
+}
+.listCart .quantity span:nth-child(2) {
+  background-color: transparent;
+  color: #eee;
+  cursor: auto;
+}
+.listCart .item:nth-child(even) {
+  background-color: #eee1;
+}
+.listCart {
+  overflow: auto;
+}
+.listCart::-webkit-scrollbar {
+  width: 0;
+}
+.listProduct .item img {
+  width: 60%;
+}
+.listProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-left: 50px;
+}
+.listProduct .item {
+  background-color: #eeeee6;
+  padding: 20px;
+}
+.listProduct .item h2 {
+  font-weight: 500;
+  font-size: large;
+  padding-top: 15px;
+}
+.listProduct .item .price {
+  letter-spacing: 7px;
+  font-size: medium;
+}
+.listProduct .item button {
+  background-color: #353432;
+  color: #eee;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.header {
+  background-color: rgba(198, 214, 135, 1);
+  padding: 15px 110px 15px 20px;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.header .nav-bar {
+  display: flex;
+  padding: 5px;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  font-family: "Taviraj";
+}
+.header .nav-bar li {
+  transition: 0.5s;
+  padding: 5px;
+}
+.header .nav-bar li:hover {
+  background-color: #ddff85;
+  border-radius: 10px;
+  padding: 5px 9px;
+}
+.header .nav-bar li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+}
+.search-icon {
+  padding: 10px 3px 3px 3px;
+  margin: 0 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.search-icon:hover {
+  color: white;
+}
+.user-icon {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  padding-top: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.user-icon:hover {
+  background-color: #ddff85;
+  border-radius: 10px;
+  padding: 5px;
+}
+.user-icon span {
+  display: inline-block;
+  margin: 0 5px;
+}
+.user-icon p {
+  margin: 2px;
+}
+svg {
+  width: 22px;
+  padding-top: 10px;
+}
+.icon-cart {
+  position: relative;
+}
+.icon-cart span {
+  position: absolute;
+  background-color: #333333;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  top: 50%;
+  right: -20px;
+}
+.home .luxuries {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .luxuries .big {
+  background-color: white;
+  padding: 20px 127px 20px 20px;
+  display: flex;
+  margin: 50px 324px 120px 100px;
+  position: relative;
+}
+.home .luxuries .big .image1 {
+  margin-right: 50px;
+}
+.home .luxuries .big .info h1 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 2%;
+}
+.home .luxuries .big .info h1::after {
+  content: "";
+  width: 65px;
+  height: 1px;
+  background-color: black;
+  display: block;
+  margin-top: 12px;
+}
+.home .luxuries .big .info p {
+  color: rgb(111 109 98);
+}
+.home .luxuries .big .info p::after {
+  content: "Discover";
+  display: block;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 10px;
+  padding-bottom: 8px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  width: fit-content;
+}
+.home .luxuries .big .info button:first-child {
+  padding: 15px;
+  color: white;
+  background-color: #404436;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+}
+.home .luxuries .big .info button:first-child:hover {
+  background-color: #9bd900;
+}
+.home .luxuries .big .info button:first-child span {
+  font-weight: 400;
+  font-family: "Taviraj";
+  margin-left: 20px;
+}
+.home .luxuries .big .info button:last-child:hover {
+  background-color: #9bd900;
+  color: white;
+  border-color: #9bd900;
+}
+
+.home .luxuries .big .info button:last-child {
+  background-color: white;
+  color: #404436;
+  padding: 13px;
+  border: solid 2px #404436;
+  font-family: "Taviraj";
+  font-weight: 500;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.home .luxuries .big .swap {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  right: -100px;
+  bottom: -15px;
+}
+.home .luxuries .big .swap button:last-child {
+  background-color: #404436;
+  border: none;
+  color: white;
+  padding-top: 4px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.home .luxuries .big .swap button:first-child {
+  background-color: white;
+  border: solid 1px #404436;
+  color: white;
+  padding-top: 4px;
+  width: 40px;
+  height: 40px;
+  color: #404436;
+  cursor: pointer;
+}
+.home .luxuries .small1 {
+  background-color: white;
+  width: 30%;
+  padding: 20px 20px 96px 20px;
+  position: relative;
+  margin: auto auto auto 100px;
+  color: #333333;
+}
+.home .luxuries .small2 {
+  background-color: white;
+  width: 45%;
+  position: relative;
+  padding: 20px 20px 110px 20px;
+  margin: auto 80px auto auto;
+  color: #333333;
+}
+.home .luxuries .small2 .image3 {
+  position: absolute;
+  background-color: white;
+  right: 16px;
+  bottom: 20px;
+}
+.home .luxuries .small1 .image2 {
+  position: absolute;
+  background-color: transparent;
+  right: -90px;
+  bottom: 20px;
+}
+.news .monthly h1 {
+  color: #333333;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.news .monthly .item {
+  padding: 20px;
+  background-color: white;
+  margin-top: 40px;
+  margin-right: 20px;
+  float: left;
+  height: 380px;
+  transition: height 0.5s ease-in-out;
+}
+.news .monthly .item .favourites {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.news .monthly .item:hover .favourites {
+  visibility: visible;
+  opacity: 1;
+}
+.news .monthly .item:hover {
+  height: 440px;
+}
+.news .monthly .item .favourites button:first-child {
+  height: 40px;
+  width: 40px;
+  padding-top: 3px;
+  background-color: transparent;
+  border: solid 1px #404436;
+  color: #404436;
+  font-size: 25px;
+  cursor: pointer;
+}
+.news .monthly .item .favourites button:last-child {
+  padding: 10px 38px;
+  border: none;
+  height: 40px;
+  background-color: #404436;
+  color: white;
+  font-weight: 400;
+  float: right;
+  cursor: pointer;
+}
+.news .monthly .item .favourites button:last-child:hover {
+  background-color: rgba(64, 68, 54, 0.8);
+}
+.news .recent-news {
+  padding: 70px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.news .recent-news .info h1 {
+  color: #333333;
+  margin-bottom: 120px;
+}
+.news .recent-news .info button {
+  color: #404436;
+  border: solid 2px #404436;
+  padding: 15px 40px;
+  cursor: pointer;
+  position: relative;
+}
+.news .recent-news .info button div {
+  width: 0%;
+  position: absolute;
+  height: 100%;
+  background-color: #404436;
+  transition: width 0.5s, color 0.1s;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 15px;
+}
+
+.news .recent-news .info button:hover div {
+  width: 100%;
+  color: white;
+}
+.products .see-more {
+  color: #404436;
+  border: solid 2px #404436;
+  padding: 15px 40px;
+  cursor: pointer;
+  position: relative;
+  width: 200px;
+  margin: 10px auto;
+}
+.products .see-more::after {
+  content: "";
+  width: 400px;
+  height: 1px;
+  background-color: #404436;
+  position: absolute;
+  top: 50%;
+  right: -215%;
+}
+
+.products .see-more::before {
+  content: "";
+  width: 400px;
+  height: 1px;
+  background-color: #404436;
+  position: absolute;
+  top: 50%;
+  left: -215%;
+}
+
+.products .see-more div {
+  width: 0%;
+  position: absolute;
+  height: 100%;
+  background-color: #404436;
+  transition: width 0.5s, color 0.1s;
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 15px;
+}
+
+.products .see-more:hover div {
+  width: 100%;
+  color: white;
+}
+.news .recent-news .image-recent::after {
+  content: "";
+  display: block;
+  width: 600px;
+  height: 75%;
+  background-color: #d0e871;
+  position: absolute;
+  top: 5%;
+  right: -15%;
+  z-index: -1;
+}
+.products .series {
+  padding: 20px;
+}
+.series .product .favourites button:first-child {
+  height: 33px;
+  width: 33px;
+  padding-top: 2px;
+  background-color: transparent;
+  border: solid 1px #404436;
+  color: #404436;
+  font-size: 20px;
+  cursor: pointer;
+}
+.series .product .favourites button:last-child {
+  padding: 3px 15px;
+  border: none;
+  height: 33px;
+  background-color: #404436;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 3px;
+}
+
+.products .series .product .favourites {
+  display: flex;
+  opacity: 0;
+  margin-top: -7px;
+  transition: 0.5s ease-in-out;
+}
+.products .series .product:hover .favourites {
+  opacity: 1;
+}
+.review {
+  position: relative;
+}
+
+.review .review-image {
+  margin-left: 70px;
+  margin-top: 80px;
+}
+.review .info {
+  margin-left: 300px;
+}
+.review .info h1 {
+  border-bottom: solid 2px #404436;
+  padding-bottom: 10px;
+  width: fit-content;
+  margin-bottom: 70px;
+}
+.review .info p {
+  margin-bottom: 70px;
+  padding-right: 125px;
+}
+.review .info h6 {
+  color: #777;
+}
+.review .review-box::after {
+  content: "";
+  width: 450px;
+  height: 270px;
+  background-color: rgb(208, 232, 113);
+  position: absolute;
+  left: 0px;
+  top: 82px;
+  z-index: -1;
+}

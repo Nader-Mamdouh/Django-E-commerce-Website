@@ -1,0 +1,93 @@
+.phases {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 162px;
+    padding: 40px;
+    position: relative;
+  }
+  .phases .confirmation-phase {
+    color: #404436;
+    font-weight: 500;
+  }
+  .phases .checkout-phase,
+  .phases .payment-phase {
+    color: #999;
+  }
+  .phases i {
+    font-size: 30px;
+  }
+  .phases p {
+    margin-top: 12px;
+  }
+  .phases .payment-phase p::after {
+    content: "";
+    background-color: #999;
+    height: 1px;
+    position: absolute;
+    width: 115px;
+    transform: translate(27px, 13px);
+  }
+  .phases .payment-phase p::before {
+    content: "";
+    background-color: #999;
+    height: 1px;
+    position: absolute;
+    width: 115px;
+    transform: translate(-137px, 13px);
+  }
+  .confirmation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+  .confirmation .order-confirmed {
+    background-color: white;
+    padding: 40px 50px;
+    text-align: center;
+  }
+  .trackbtn {
+    padding: 15px 70px;
+    text-align: center;
+    background-color: #404436;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .track-details {
+    background-color: white;
+    padding: 40px 20px;
+  }
+  .track-details .countdown { 
+    display: flex;
+    gap: 50px;
+    margin-bottom: 25px;
+  }
+  /* start footer */
+footer ul svg {
+    width: 20px;
+    height: 20px;
+  }
+  footer .facebook {
+    background-color: #1877f2;
+  }
+  footer .youtube {
+    background-color: #ff0000;
+  }
+  footer .twitter {
+    background-color: #1da1f2;
+  }
+  footer .linkedin {
+    background-color: #0a66c2;
+  }
+  Footer h1 {
+    color: white;
+    padding-bottom: 10px;
+    width: fit-content;
+    border-bottom: solid 2px white;
+    margin-bottom: 40px;
+  }
+  /* end footer */

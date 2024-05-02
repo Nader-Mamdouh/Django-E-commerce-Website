@@ -1,0 +1,93 @@
+.phases {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 162px;
+  padding: 40px;
+  position: relative;
+}
+.phases .payment-phase {
+  color: #404436;
+  font-weight: 500;
+}
+.phases .checkout-phase,
+.phases .confirmation-phase {
+  color: #999;
+}
+.phases i {
+  font-size: 30px;
+}
+.phases p {
+  margin-top: 12px;
+}
+.phases .payment-phase p::after {
+  content: "";
+  background-color: #999;
+  height: 1px;
+  position: absolute;
+  width: 115px;
+  transform: translate(27px, 13px);
+}
+.phases .payment-phase p::before {
+  content: "";
+  background-color: #999;
+  height: 1px;
+  position: absolute;
+  width: 115px;
+  transform: translate(-137px, 13px);
+}
+.payment-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+}
+.payment-details h3 {
+  margin-bottom: 20px;
+}
+.payment-method {
+  background-color: white;
+  padding: 20px;
+  width: 44%;
+  margin: 25px auto;
+  position: relative;
+  margin-bottom: 100px;
+}
+.payment-method .bank-name {
+  border: none;
+  border-bottom: solid 1px #404436;
+}
+.payment-method input:focus {
+  outline: none;
+}
+.payment-method .card-no {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.payment-method .card-no input {
+  width: 20%;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.payment-method .cvv {
+  width: 20%;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.proceed-payment {
+  position: absolute;
+  color: white;
+  background-color: #404436;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  right: 0;
+  bottom: -60px;
+  cursor: pointer;
+}

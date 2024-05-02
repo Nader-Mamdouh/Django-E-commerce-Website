@@ -1,0 +1,65 @@
+.phases {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 162px;
+  padding: 40px;
+  position: relative;
+}
+.phases .checkout-phase {
+  color: #404436;
+  font-weight: 500;
+}
+.phases .payment-phase,
+.phases .confirmation-phase {
+  color: #999;
+}
+.phases i {
+  font-size: 30px;
+}
+.phases p {
+  margin-top: 12px;
+}
+.phases .payment-phase p::after {
+  content: "";
+  background-color: #999;
+  height: 1px;
+  position: absolute;
+  width: 115px;
+  transform: translate(27px, 13px);
+}
+.phases .payment-phase p::before {
+  content: "";
+  background-color: #999;
+  height: 1px;
+  position: absolute;
+  width: 115px;
+  transform: translate(-137px, 13px);
+}
+.billing-address input[type="text"] {
+  border: none;
+  border-bottom: solid 1px #999;
+  padding: 5px 5px 5px 0px;
+  width: 100%;
+}
+.billing-address input[type="text"]::placeholder {
+  color: #999;
+  font-size: 13px;
+}
+.billing-address input[type="text"]:focus {
+  outline: none;
+  color: #777;
+}
+.place-orderbtn {
+  border: none;
+  margin-top: 30px;
+  padding: 10px;
+  color: white;
+  background-color: #404436;
+  cursor: pointer;
+}
+.shoppingbtn { 
+    padding: 10px;
+    border: solid 1px #999;
+    color: #404436;
+}
