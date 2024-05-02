@@ -1,7 +1,7 @@
 # Luxury Ecommerce 
 
 ## Description
-This is a fully-functional eCommerce website built using HTML, CSS, JavaScript, JSON, Django, and SQL. It allows users to register, login, browse products, add them to the cart, view product details, and manage their account.
+This is a fully-functional eCommerce website built using HTML, CSS, JavaScript, Jquery, Ajax, JSON, Django. It allows users to register, login, browse products, add them to the cart, view product details, and manage their account.
 
 ## Features
 - User authentication (login, registration)
@@ -13,7 +13,7 @@ This is a fully-functional eCommerce website built using HTML, CSS, JavaScript, 
 ## Installation
 1. Clone this repository to your local machine.
     ```
-    git clone https://github.com/your-username/your-ecommerce-website.git
+    https://github.com/Nader-Mamdouh/Django-E-commerce-Website.git
     ```
 2. Install Python if you haven't already.
 3. Navigate to the project directory.
